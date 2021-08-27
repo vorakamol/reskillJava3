@@ -10,6 +10,11 @@ public class Range {
     }
 
     public int getStartInput(){
-        return Integer.parseInt(input.substring(1,2));
+        int positionOfStartInput = 1 ;
+        return Integer.parseInt(input.substring(positionOfStartInput,2));
+    }
+
+    public boolean isEndWithInclusive() {
+        return input.endsWith("]");
     }
 }

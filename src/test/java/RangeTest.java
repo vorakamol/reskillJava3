@@ -30,4 +30,13 @@ public class RangeTest {
 
         assertEquals(1, actualResult);
     }
+
+    @Test
+    public void isEndWithInclusiveWithKampooShouldBeTrue () {
+        Range range = new Range("[1,5]");
+
+        boolean actualResult = range.isEndWithInclusive();
+
+        assertTrue(actualResult);
+    }
 }
